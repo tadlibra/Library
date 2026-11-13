@@ -17,7 +17,7 @@ namespace LibrarySystem
         {
             InitializeComponent();
         }
-        SqlConnection con = new SqlConnection("Data Source=DAT\\SQLEXPRESS;Initial Catalog=lilbrary;Integrated Security=True;");
+        SqlConnection con = new SqlConnection(System.Configuration.ConfigurationManager.ConnectionStrings["Library"].ConnectionString);
         private void label2_Click(object sender, EventArgs e)
         {
 
